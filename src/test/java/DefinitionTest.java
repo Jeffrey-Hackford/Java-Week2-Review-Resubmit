@@ -29,6 +29,12 @@ public class DefinitionTest {
     assertEquals(Definition.all().size(), 0);
   }
 
+  @Test
+  public void getId_definitionsInstantiateWithAnIncreasingIDNumber_1() {
+    Definition.clear();
+    Definition myDefinition = new Definition("a test definition");
+    assertEquals(1, myDefinition.getId());
+  }
 
 
 }
