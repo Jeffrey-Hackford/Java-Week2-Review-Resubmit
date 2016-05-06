@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DefinitionTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-05-06T04:10:59" hostname="users-MacBook-Pro.local" time="0.003">
+<testsuite name="DefinitionTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-05-06T04:17:39" hostname="users-MacBook-Pro.local" time="0.012">
   <properties/>
-  <testcase name="find_returnsNullWhenNoTaskFound_null" classname="DefinitionTest" time="0.001"/>
+  <testcase name="find_returnsNullWhenNoTaskFound_null" classname="DefinitionTest" time="0.002"/>
   <testcase name="find_returnsDefinitionWithSameId_secondDefinition" classname="DefinitionTest" time="0.0"/>
   <testcase name="all_returnsAllInstancesOfDefinition_true" classname="DefinitionTest" time="0.0"/>
   <testcase name="Definition_instantiatesCorrectly_true" classname="DefinitionTest" time="0.001"/>
-  <testcase name="clear_emptiesAllInstancesFromArrayList_0" classname="DefinitionTest" time="0.0"/>
+  <testcase name="clear_emptiesAllInstancesFromArrayList_0" classname="DefinitionTest" time="0.001"/>
   <testcase name="getId_definitionsInstantiateWithAnIncreasingIDNumber_1" classname="DefinitionTest" time="0.0"/>
   <testcase name="Definition_instantiatesWithDefinition_String" classname="DefinitionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
