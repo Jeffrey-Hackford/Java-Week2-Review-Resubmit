@@ -3,6 +3,11 @@ import static org.junit.Assert.*;
 
 public class DefinitionTest {
 
+  @After
+  public void tearDown() {
+    Definition.clear();
+  }
+
   @Test
   public void Definition_instantiatesCorrectly_true() {
     Definition myDefinition = new Definition("a test definition");
