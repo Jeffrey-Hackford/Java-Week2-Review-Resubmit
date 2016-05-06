@@ -1,4 +1,4 @@
-# _Word Puzzle_
+# _Dictionary_
 
 #### _Word and definition application, 5-04-2016_
 
