@@ -49,7 +49,7 @@ public class DefinitionTest {
   }
 
   @Test
-  public void find_returnsNullWhenNoTaskFound_null() {
+  public void find_returnsNullWhenNoDefinitionFound_null() {
     assertTrue(Definition.find(999) == null);
   }
 
