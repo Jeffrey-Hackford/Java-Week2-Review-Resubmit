@@ -92,6 +92,7 @@ public class App {
       Definition newDefinition = new Definition(definition);
 
       word.addDefinition(newDefinition);
+      System.out.println(newDefinition);
 
       model.put("word", word);
       model.put("template", "templates/word-definitions-success.vtl");
