@@ -1,7 +1,7 @@
 <h1>$word.getWord() definitions:</h1>
 
 <ul>
-  #foreach($definition in $definitions)
+  #foreach($definition in $word.getDefinitions())
    <li>$definition.getDefinition()</li>
   #end
 </ul>

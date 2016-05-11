@@ -63,4 +63,20 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Apple");
     assertThat(pageSource()).contains("Pear");
   }
+
+  @Test
+  public void testWordDefinitionPath() {
+    goTo("http://localhost:4567/");
+    click("a", withText("Add a New Word"));
+    fill("#name").with("Apple");
+    submit(".btn");
+    click("a", withText("View words"));
+    click("a", withText("Apple"));
+    click("a", withText("Add a new definition"));
+    fill("#definition").with("fruit");
+    submit(".btn");
+    click("a", withText("View words"));
+    click("a", withText("Apple"));
+    assertThat(pageSource()).contains("fruit");
+  }
 }
