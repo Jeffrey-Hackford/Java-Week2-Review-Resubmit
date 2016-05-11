@@ -70,13 +70,10 @@ public class AppTest extends FluentTest {
     click("a", withText("Add a New Word"));
     fill("#name").with("Apple");
     submit(".btn");
-    click("a", withText("View words"));
-    click("a", withText("Apple"));
-    click("a", withText("Add a new definition"));
+    goTo("http://localhost:4567/words/1/definitions/new");
     fill("#definition").with("fruit");
     submit(".btn");
-    click("a", withText("View words"));
-    click("a", withText("Apple"));
+    goTo("http://localhost:4567/words/1");
     assertThat(pageSource()).contains("fruit");
   }
 }
